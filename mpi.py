@@ -21,7 +21,7 @@ def calPi(n):
 #Master
 if rank == 0:
 	# Pi Calculation
-	rangeNumber = 10**5
+	rangeNumber = 10**8
 	# print('This is rank 0 sending %s as range to slaves for calculation' %(rangeNumber))
 	comm.send(rangeNumber,dest=1,tag=11)
 	comm.send(rangeNumber,dest=2,tag=11)
